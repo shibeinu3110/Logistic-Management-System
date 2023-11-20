@@ -1,0 +1,13 @@
+logging:
+  level:
+    root: INFO
+  file:
+    name: "logs/info.log"
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%"
+  logback:
+    rollingpolicy:
+      max-file-size: 2MB
+      total-size-cap: 10MB
+      max-history: 30
+      clean-history-on-start: false

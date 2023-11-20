@@ -1,0 +1,31 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: "jdbc:postgresql://127.0.0.1:5432/demo_tms"
+    username: "postgres"
+    password: "Oceantech@123"
+
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    generate-ddl: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+logging:
+  level:
+    root: INFO
+  file:
+    name: "logs/info.log"
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%"
+  logback:
+    rollingpolicy:
+      max-file-size: 2MB
+      total-size-cap: 10MB
+      max-history: 30
+      clean-history-on-start: false
