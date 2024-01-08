@@ -26,6 +26,7 @@
    Làm quen cơ bản với nghiệp vụ của bài toán thực tế
 
 ## [Link](https://docs.google.com/spreadsheets/d/1rSRS0unRCBQciTuiB-1-rRJ6nY_36M00-HSt4MR51FU/edit#gid=2094437619) bài tập 
+## [Link](/documents/oct_l2_logistic.sql) SQL
 
 
 ## Review pass level

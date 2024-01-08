@@ -24,7 +24,6 @@ public class ProvinceController {
 
     @GetMapping("/{id}")
     public OctResponse<ProvinceDTO> getById(@PathVariable @Min(1) long id) {
-        log.info("àdsf");
         ProvinceDTO result = provinceService.getBybId(id);
         return OctResponse.build(result);
     }
