@@ -10,6 +10,10 @@ public class OctException extends RuntimeException {
         super();
         this.errMsg = errMsg;
     }
+    public OctException(ErrorMessage errMsg, String message) {
+        super();
+        this.errMsg = errMsg;
+    }
 
     public OctException() {
         super();

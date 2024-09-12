@@ -1,12 +1,11 @@
 package com.octl2.api.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "lc_province")
@@ -14,7 +13,7 @@ import javax.persistence.Table;
 @Setter
 public class Province {
     @Id
-    @Column(name = "prv_id")
+    @Column(name = "province_id")
     private Long id;
 
     @Column(name = "name")
@@ -28,4 +27,11 @@ public class Province {
 
     @Column(name = "dcsr")
     private String description;
+
+    @Column(name = "region_id")
+    private Long regionId;
+
+    @Column(name = "org_id")
+    private Long orgId;
+
 }

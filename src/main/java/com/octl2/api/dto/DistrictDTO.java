@@ -13,16 +13,16 @@ import java.util.HashSet;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+public class DistrictDTO extends BaseLogisticDTO{
+    private Integer districtId;
+    private String districtName;
+    private String districtCode;
 
-public class ProvinceDTO extends BaseLogisticDTO {
-    private Integer provinceId;
-    private String provinceName;
-    private String provinceCode;
-    public ProvinceDTO(ResultQuery resultQuery) {
+    public DistrictDTO(ResultQuery resultQuery) {
         if(resultQuery != null) {
-            this.provinceId = resultQuery.getProvinceId();
-            this.provinceCode = resultQuery.getProvinceCode();
-            this.provinceName = resultQuery.getProvinceName();
+            this.districtId = resultQuery.getDistrictId();
+            this.districtName = resultQuery.getDistrictName();
+            this.districtCode = resultQuery.getDistrictCode();
 
             this.setFfmPartnerList(new HashSet<>());
             this.setLmPartnerList(new HashSet<>());

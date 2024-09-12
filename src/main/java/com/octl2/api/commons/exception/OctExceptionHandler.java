@@ -61,6 +61,7 @@ public class OctExceptionHandler {
         return new ResponseEntity<>(OctResponse.build(ErrorMessages.NOT_FOUND), HttpStatus.OK);
     }
 
+
     @ExceptionHandler(OctException.class)
     protected ResponseEntity<OctResponse<String>> handleOctException(OctException ex) {
         log.info("handleOctException. Msg = {}", ex.getErrMsg().getMessage(), ex);

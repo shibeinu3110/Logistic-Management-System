@@ -1,13 +1,14 @@
 server:
   port: 8082
 
+
+
 spring:
   datasource:
     driverClassName: org.postgresql.Driver
-    url: "jdbc:postgresql://127.0.0.1:5432/demo_tms"
+    url: "jdbc:postgresql://127.0.0.1:5432/l2_database"
     username: "postgres"
-    password: "Oceantech@123"
-
+    password: "superuser"
   jpa:
     database: POSTGRESQL
     database-platform: org.hibernate.dialect.PostgreSQLDialect
@@ -16,6 +17,8 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: none
+
+levelMapping: 3
 logging:
   level:
     root: INFO
